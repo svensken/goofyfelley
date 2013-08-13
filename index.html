@@ -8,8 +8,25 @@
 </head>
 
 <body>
-<marquee behavior="alternate"><h1>Cutest Felley Ever</h1></marquee>
+<marquee behavior="alternate"><h1></h1></marquee>
 <img src="felley_fullsize.jpg" style="display: block; margin-left: auto; margin-right: auto;" />
+<p style="text-align:center">happy birthday, buddy :)</p>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  var cuteness = [ 'Cutest Felley Ever',
+                   'Suuuuuuuper good-lookin',
+                   'what. a. cute. butt.',
+                   'Marry me, felix',
+                   'You should be paid for your handsomeness',
+                   'you get sexier every day' ]
+
+  $(document).ready(function() {
+    $("h1").html(cuteness[Math.floor(Math.random()*cuteness.length)]);
+  });
+</script>
+
 </body>
 
 </html>
